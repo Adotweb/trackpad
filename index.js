@@ -6,7 +6,7 @@ import qr from "qrcode-terminal";
 
 import ip from "ip";
 
-import robot from "robotjs";
+import robot from "@hurdlegroup/robotjs";
 
 let PORT = 4269;
 
@@ -78,8 +78,6 @@ wss.on("connection", (socket) => {
 
 		if(msg.type == "pinch"){
 			let {rotation, pinch_delta, two_finger_delta} = msg;
-
-			console.log(msg)
 
 
 
